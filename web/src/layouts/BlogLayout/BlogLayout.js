@@ -4,7 +4,9 @@ const BlogLayout = ({ children }) => {
   return (
     <>
       <header>
-        <h1>Redwood Blog </h1>
+        <h1>
+          <Link to={routes.home()}>Redwood Blog </Link>
+        </h1>
         <nav>
           <ul>
             <li>
@@ -14,7 +16,7 @@ const BlogLayout = ({ children }) => {
               <Link to={routes.poop()}>Poop</Link>
             </li>
             <li>
-              <Link to={routes.home()}>Home</Link>
+              <Link to={routes.contact()}>Contact</Link>
             </li>
           </ul>
         </nav>
