@@ -12,7 +12,7 @@ const BlogLayout = ({ children }) => {
           </h1>
           {isAuthenticated ? (
             <div>
-              <span>Loggin in as {currentUser.email}</span>{' '}
+              <span>Loggin in as {}</span>{' '}
               <button type="button" onClick={logOut}>
                 Logout
               </button>
