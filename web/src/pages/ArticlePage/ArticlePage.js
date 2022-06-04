@@ -13,7 +13,7 @@ const ArticlePage = ({ id }) => {
       </p>
       <p>
         My default route is named <code>article</code>, link to me with `
-        <Link to={routes.article({ id: 1 })}>Article</Link>`
+        <Link to={routes.article({ id: id })}>Article</Link>`
       </p>
       <p>My id is {id}</p>
       <Link to={routes.home()}>Home</Link>
