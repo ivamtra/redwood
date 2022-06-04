@@ -13,7 +13,7 @@ const BlogLayout = ({ children }) => {
           {isAuthenticated ? (
             <div>
               <span>
-                Loggin in as {currentUser.email ? currentUser.email : 'no user'}
+                Logged in as {currentUser.email ? currentUser.email : 'no user'}
               </span>{' '}
               <button type="button" onClick={logOut}>
                 Logout
@@ -33,6 +33,11 @@ const BlogLayout = ({ children }) => {
             </li>
             <li>
               <Link to={routes.contact()}>Contact</Link>
+            </li>
+            <li>
+              <Link to={routes.posts()}>
+                {isAuthenticated ? 'Create a post' : ''}
+              </Link>
             </li>
           </ul>
         </nav>
