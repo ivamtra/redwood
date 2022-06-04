@@ -25,6 +25,7 @@ export const Success = ({ article }) => {
       <header>
         <h2>{article.title}</h2>
       </header>
+      <p>{article.body}</p>
     </article>
   )
 }
